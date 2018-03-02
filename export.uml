@@ -1,0 +1,31 @@
+@startuml
+
+namespace Dummy.Namespace.Extreme {
+  interface IDummyClass {
+    +string Name // a name of something
+    +int GetValue() // gets a value
+  }
+
+  enum ButtonType {
+    CancelButton
+    OkButton
+  }
+
+  class DummyClass {
+    -const string NAME // some kind of fixed name
+    +int GetValue() // gets a value
+  }
+}
+
+namespace Dummy.Namespace {
+  class DummyClass {
+    -const string NAME // some kind of fixed name
+    +int Test // the number of occurences of something
+    +int Hi // the number of occurences of something
+    +int Lol // the number of occurences of something
+    +int Count // the number of occurences of something
+    +void DoNothing(string option, float ignoredValue) // does nothing at all
+  }
+}
+
+@enduml
